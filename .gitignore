@@ -1,0 +1,8 @@
+deployment/.secrets.sh
+deployment/terraform/.terraform/environment
+deployment/terraform/.terraform/terraform.tfstate
+deployment/terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/3.48.0/linux_amd64/terraform-provider-aws_v3.48.0_x5
+deployment/terraform/.terraform.lock.hcl
+deployment/terraform/terraform.tfstate
+deployment/terraform/terraform.tfstate.backup
+deployment/terraform/plan.tfplan

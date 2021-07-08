@@ -1,0 +1,28 @@
+metadata:
+  labels:
+    ci-cd: aircall
+spec:
+  serviceAccountName: jenkins
+  containers:
+  - name: jnlp
+    env:
+    - name: CONTAINER_ENV_VAR
+      value: jnlp
+  - name: node
+    image: node:lts-alpine3.13
+    command:
+    - cat
+    tty: true
+    resources:
+      requests:
+        memory: "256Mi"
+        cpu: "200m"
+  - name: terraform
+    image: hashicorp/terraform:1.0.1
+    command:
+    - cat
+    tty: true
+    resources:
+      requests:
+        memory: "256Mi"
+        cpu: "200m"
